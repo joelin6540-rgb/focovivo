@@ -43,3 +43,12 @@ Los datos de demostración se mantienen en memoria durante la sesión. Las prefe
 La sección **Biblioteca offline** incluye 18 fichas de ejemplo distribuidas en lectura, música, creatividad, manualidades, movimiento y naturaleza/cocina. Permite buscar, filtrar por categoría y guardar recursos en una lista local del navegador. Las coincidencias con el perfil se señalan usando los intereses guardados por la persona.
 
 El catálogo actual está definido en `js/library.js`; no descarga obras completas ni consulta APIs externas. Para la siguiente etapa, cada ficha ya tiene campos de categoría, tipo de recurso, título, autor/fuente, duración, nivel y descripción, que pueden mapearse a una API de catálogo, Firestore y Cloud Storage. Los títulos literarios listados son obras de dominio público en su texto original; para distribuir traducciones o ediciones concretas se deberá verificar la licencia de esa edición.
+
+## Mejoras de experiencia: exploración, asistente, inspiración y comunidades
+- **Actividades cercanas:** tarjetas de ideas priorizadas por los intereses guardados; búsqueda manual de parques, bibliotecas, cafés, instalaciones deportivas y talleres que abre Google Maps. La búsqueda de lugares todavía no usa geolocalización ni APIs de establecimientos.
+- **Inspiración previa:** enlaces de búsqueda a videos de YouTube y consejos breves para dibujo, lectura y movimiento; pensados como impulso antes de realizar la actividad offline.
+- **Asistente de actividades:** plan local con preparación y pasos sugeridos. Puede abrir un borrador de correo, búsqueda en Maps o compartir una invitación; no envía correos ni reserva lugares automáticamente.
+- **Recordatorios:** agenda un aviso en el navegador y opcionalmente pide permiso para Notifications. En este prototipo el recordatorio requiere que la página permanezca abierta; no hay push de fondo.
+- **Comunidades:** invitar a conocer FocoVivo, crear comunidades locales de muestra y unirse/salir de grupos demo. Se almacenan solo en el navegador y no sincronizan entre usuarios.
+
+Estas nuevas funciones son demostrativas y se preparan para futuras integraciones (APIs de lugares y videos, backend/autenticación, notificaciones push, base de datos compartida y agente IA con acciones autorizadas por la persona).
